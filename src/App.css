@@ -36,3 +36,282 @@
     transform: rotate(360deg);
   }
 }
+
+/* COMPONENTS */
+/* Human model */
+.HumanModelWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.BodyComponentWrapper {
+  position: relative;
+  z-index: 0;
+}
+
+.BodyComponentWrapper svg path {
+  fill: #4848484d !important;
+}
+
+.BodyComponentWrapper svg path.selected {
+  fill: #0284ae !important;
+}
+
+/* Home Banner */
+.HomeBanner {
+  height: 149px;
+  display: flex;
+  background-color: #65b9c6;
+  border-radius: 10px;
+}
+
+.HomeBannerText {
+  width: 70%;
+  padding: 1em;
+}
+
+.HomeBannerHeaderText {
+  font-size: 27px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.HomeBannerContentText {
+  font-size: 13px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.HomeBannerButton {
+  width: 53%;
+  background-color: #ffffff;
+  padding: 0.5em 1.5em;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-top: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.HomeBannerImage {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+/* Service Card */
+.ServicesCard {
+  height: 129px;
+  border-radius: 10px;
+  background-color: #e0f1f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ServicesCardLabel {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Insurance Card */
+.InsuranceCard {
+  height: 68px;
+  border-radius: 10px;
+  background-color: #e0f1f4;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+}
+
+.InsuranceContent {
+  display: flex;
+  padding: 1em;
+}
+
+.InsuranceContentText {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1em;
+}
+
+.InsuranceCoverageText {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.InsuranceDescText {
+  font-size: 10.5px;
+  font-weight: 400;
+}
+
+.InsuranceLock {
+  padding-right: 0.35em;
+}
+
+/* Alert Modal */
+.ModalWrapper {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.Modal {
+  width: 270px;
+  height: 128px;
+  border: 1px solid black;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.OkButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid black;
+  width: 100%;
+  height: 44px;
+  color: #007aff;
+}
+
+.AlertModalText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 84px;
+  font-weight: 600;
+}
+
+/* SECTIONS */
+
+/* Home */
+.Home {
+  padding: 1.35em 1.35em 0em 1.35em;
+}
+
+/* Home top Bar */
+.HomeTopBar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em 0em;
+}
+
+.HomeTopBar svg {
+  margin-left: 0.7em;
+}
+
+/* Sub Header Text */
+.SubHeaderText {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+/* Medical Services Section */
+.Services {
+  margin: 2em 0em;
+}
+
+.ServicesContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ServicesSection {
+  width: 50%;
+}
+
+.ServicesSection div:nth-child(1) {
+  margin-bottom: 0.5em;
+}
+
+.ServicesSectionLeft {
+  margin-right: 0.7em;
+}
+
+/* Bottom Bar */
+.bottomBar {
+  border-top: 1px solid black;
+  border-radius: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #ffffff;
+}
+
+.bottomBarContent {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.35em 0em 0.75em 0em;
+}
+
+/* Symptoms Checker Page */
+.SymptonsCheckerTopBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.SymptonsCheckerBar {
+  display: flex;
+  border-bottom: 1px solid black;
+  color: #848484;
+}
+
+.BarItem {
+  margin-left: 1em;
+  padding-bottom: 0.5em;
+}
+
+.BarItemSelected {
+  border-bottom: 2px solid #65b9c6;
+}
+
+.SymptonsCheckerText {
+  font-size: 18px;
+  font-weight: 700;
+  color: #484848;
+}
+
+.SymptonsCheckerHeaderText {
+  font-size: 20px;
+}
+
+.Searchtext {
+  color: #65b9c6;
+}
+
+.CancelIcon {
+  position: absolute;
+  right: 0;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+.RotateModel {
+  display: flex;
+  padding-left: 1em;
+  padding-top: 1em;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.RotateModelText {
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 0.5em;
+  color: #65b9c6;
+}
